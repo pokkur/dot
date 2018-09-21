@@ -1,0 +1,20 @@
+@function Dot($color: red, $size: 2px, $space: 30px) {
+    @return
+        radial-gradient($color 0px, $color $size, transparent $size+1px) $space/2 $space/2 repeat / $space $space,
+        radial-gradient($color 0px, $color $size, transparent $size+1px) 0 0 repeat / $space $space
+}
+
+@mixin Dot($color: red, $size: 2px, $space: 30px, $shorthand: true) {
+    @if $shorthand {
+        background:
+            radial-gradient($color 0px, $color $size, transparent $size+1px) $space/2 $space/2 repeat / $space $space,
+            radial-gradient($color 0px, $color $size, transparent $size+1px) 0 0 repeat / $space $space;
+    } @else {
+        background-image:
+            radial-gradient($color 0px, $color $size, transparent $size+1px),
+            radial-gradient($color 0px, $color $size, transparent $size+1px);
+        background-position: $space/2 $space/2, 0 0;
+        background-repeat: repeat, repeat;
+        background-size: $space $space, $space $space;
+    }
+}

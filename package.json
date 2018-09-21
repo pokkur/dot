@@ -1,0 +1,24 @@
+{
+  "name": "@pokkur/dot",
+  "version": "1.0.0",
+  "description": "Scss/Stylus Dot pattern background function/mixin",
+  "main": "dot.scss",
+  "style": "dot.scss",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pokkur/dot.git"
+  },
+  "keywords": [
+    "stylus",
+    "scss"
+  ],
+  "author": "Yoshiki Kobayashi <siggy.hannes@gmail.com> (https://github.com/pokkur)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pokkur/dot/issues"
+  },
+  "homepage": "https://github.com/pokkur/dot#readme"
+}
